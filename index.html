@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora estilo iPhone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <!-- DISPLAY -->
+        <div class="display" id="display">0</div>
+
+        <!-- LAYOUT GENERAL -->
+        <div class="layout">
+
+            <!-- BOTONES NORMALES -->
+            <div class="buttons-basic">
+
+                <button class="gray" onclick="clearDisplay()">AC</button>
+                <button class="gray" onclick="invert()">+/-</button>
+                <button class="gray" onclick="percent()">%</button>
+                <button class="orange" onclick="press('/')">÷</button>
+
+                <button onclick="press('7')">7</button>
+                <button onclick="press('8')">8</button>
+                <button onclick="press('9')">9</button>
+                <button class="orange" onclick="press('*')">×</button>
+
+                <button onclick="press('4')">4</button>
+                <button onclick="press('5')">5</button>
+                <button onclick="press('6')">6</button>
+                <button class="orange" onclick="press('-')">−</button>
+
+                <button onclick="press('1')">1</button>
+                <button onclick="press('2')">2</button>
+                <button onclick="press('3')">3</button>
+                <button class="orange" onclick="press('+')">+</button>
+
+                <button class="wide" onclick="press('0')">0</button>
+                <button onclick="press('.')">.</button>
+                <button class="orange" onclick="calculate()">=</button>
+
+            </div>
+
+            <!-- BOTONES CIENTÍFICOS -->
+            <div class="buttons-scientific">
+
+                <button onclick="scientific('sin')">sin</button>
+                <button onclick="scientific('cos')">cos</button>
+                <button onclick="scientific('tan')">tan</button>
+                <button onclick="scientific('sqrt')">√</button>
+
+                <button onclick="scientific('log')">log</button>
+                <button onclick="scientific('ln')">ln</button>
+                <button onclick="scientific('pow2')">x²</button>
+                <button onclick="scientific('pow3')">x³</button>
+
+                <button onclick="scientific('pi')">π</button>
+                <button onclick="scientific('e')">e</button>
+                <button onclick="scientific('fact')">n!</button>
+                <button onclick="scientific('inv')">1/x</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
